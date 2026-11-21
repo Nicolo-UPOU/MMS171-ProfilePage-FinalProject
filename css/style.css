@@ -1,0 +1,196 @@
+*, * ::before, *::after {
+	box-sizing:border-box;
+}
+
+@font-face {
+	font-family: "Comic Neue Fallback";
+	src: local('Comic Sans MS'), 
+		 local('Arial'), 
+		 local('Roboto');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Fredoka Fallback";
+	src: local('Segoe UI Semibold'), 
+		 local('Helvetica Neue Medium'),
+		 local('HelveticaNeue-Medium'),
+		 local('Roboto Medium'),
+		 local('Roboto-Medium'),
+		 local('Arial Bold');
+	font-weight: 500;
+}
+
+body {
+	background-color: #EDEFF0;
+	color: #191B1C;
+	font-family:'Comic Neue', 'Comic Neue Fallback', sans-serif;
+	font-weight: 700;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+main {
+	max-width: 60rem;
+	margin: 0 auto 1.5rem;
+	padding: 0 1.5rem;
+}
+
+footer {
+	max-width: 57rem;
+	margin: 0 auto 1.5rem;
+	padding: 1.5rem;
+}
+
+section, footer {
+	margin-bottom:1.5rem;
+	padding: 1.5rem;
+	background-color: #FFF;
+	border: 0.0625rem solid #CBD5E1;
+	border-radius: 0.75rem;
+}
+
+h1, h2, h3 {
+	font-family: 'Fredoka', 'Fredoka Fallback', sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+h2 {
+	color: #1E2A5F;
+	font-size: 1.8rem;
+	margin-top: 0;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.125rem solid #B7A25A;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: #1E2A5F;
+	text-align: left;
+}
+
+p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+header {
+	background-color: #1E2A5F;
+	color: #EDEFF0;
+	text-align: center;
+	margin: 0 0 1.5rem;
+	padding: 2rem;
+	border-radius: 0;
+}
+
+header h2 {
+	color: #FFF;
+	font-size: 1.3rem;
+	font-style: italic;
+	margin-top: 0;
+	border-bottom: none;
+}
+
+.full-bio {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.bio-pic img {
+	width: 500px;
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0.5rem 0;
+	border: 0.125rem solid #CBD5E1;
+	border-radius: 0.5rem;
+}
+
+.date {
+	font-size: 1rem;
+	font-style: italic;
+	color: #52585A;
+}
+
+.passion-projects h3 {
+	margin-top: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+.passion-projects p {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.passion-projects img {
+	display: block;
+	margin: 0.75rem auto;
+}
+
+.things-i-love ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0.75rem 0 0;
+}
+
+.things-i-love li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1.1rem;
+}
+
+.things-i-love li::before {
+	content: "▶";
+	flex-shrink: 0;
+	color: #B7A25A;
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+.love-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.love-topic {
+	color: #1E2A5F;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.25;
+}
+
+.love-desc {
+	color: #191B1C;
+	font-weight: 400;
+	font-size: 1.05rem;
+	line-height: 1.4;
+	margin-top: 0.2rem;
+}
+
+@media (max-width:600px) {
+	.full-bio{
+		flex-direction: column;
+	}
+	
+		body {
+		text-align: left;
+	}
+	
+	footer {
+		margin: auto 1.5rem;
+	}
+}
